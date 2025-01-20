@@ -1,0 +1,48 @@
+\documentclass[a4paper, 12pt]{article}
+
+% Pacotes essenciais
+\usepackage[utf8]{inputenc}    % Suporte a caracteres UTF-8
+\usepackage[brazil]{babel}     % Idioma em português brasileiro
+\usepackage{amsmath, amssymb}  % Pacotes matemáticos
+\usepackage{graphicx}          % Inclusão de imagens
+\usepackage{geometry}          % Ajuste de margens
+\geometry{a4paper, margin=2.5cm}
+
+% Personalização de cabeçalho e rodapé
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{Tópicos de Física Teórica I}
+\fancyhead[R]{\thepage}
+\fancyfoot[C]{\small Universidade Federal de Fortaleza - Departamento de Física}
+
+% Título e autorssaes
+\title{\textbf{1° Lista}}
+\author{
+    Robert Bertoldo Tavares \\
+    Aluno 2 \\
+    Aluno 3
+}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+\thispagestyle{fancy}
+
+\section*{Problema 1}
+\section*{Problema 2}
+\section*{Problema 3}
+Usando o importance sampling, conseguimos calcular o valor da integral. A amostragem se mostrou 
+muito relevante para a exatidão do valor calculado. Para amostras entre \(1000\) e \(100000\), o erro
+foi acima de \(1\%\). Para uma amostragem de \(1000000\) ou superior, o erro foi sempre inferior a \(1\%\),
+mas o custo computacional tambem aumentou siginificativamente, indo de decimos para dezenas de segundos. 
+Um dos melhores resultados que obtivemos foi:
+\\
+
+\noindent\textbf{Monte Carlo: 1.08049}\\
+\textbf{Teórico: 1.08232}\\
+\textbf{Erro: 0.1695}
+
+
+\end{document}
