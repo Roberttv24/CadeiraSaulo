@@ -19,9 +19,9 @@
 % Título e autorssaes
 \title{\textbf{1° Lista}}
 \author{
+    Carlos Miguel Moreira Gonçalves \\
+    Igor Pereira Cavalcante \\
     Robert Bertoldo Tavares \\
-    Aluno 2 \\
-    Aluno 3
 }
 \date{\today}
 
@@ -43,6 +43,37 @@ Um dos melhores resultados que obtivemos foi:
 \noindent\textbf{Monte Carlo: 1.08049}\\
 \textbf{Teórico: 1.08232}\\
 \textbf{Erro: 0.1695}
+
+\section*{Problema 4}
+A solução exata para uma dimensão \(d\), dado que a integral não possui uma solução analítica, foi 
+obtida utilizando uma calculadora de integrais e resulta em:
+
+\begin{equation}
+    \int_{[0,1]^d} f(x) \, dx = 0.7468^{d}.
+\end{equation}
+
+Com isso, para cada dimensão \(d\), calculamos numericamente o valor da integral e comparamos com o valor 
+teórico. Os resultados obtidos, tomando o máximo de amostragem em cada dimensão, foram:
+
+\begin{table}
+    \centering
+    \begin{tabular}{|c|c|c|}
+        \hline
+        Dimensão & Monte Carlo & Teórico \\
+        \hline
+        1 & 0.7468 & 0.7468 \\
+        2 & 0.5564 & 0.5564 \\
+        3 & 0.3914 & 0.3914 \\
+        4 & 0.2764 & 0.2764 \\
+        6 & 0.17346 & 0.17347 \\
+        10 & 0.05396 & 0.05396 \\
+        \hline
+    \end{tabular}
+    \caption{Comparação entre o valor da integral numérica e o valor teórico para cada dimensão.}
+\end{table}
+
+
+\section*{Problema 5}
 
 
 \end{document}
